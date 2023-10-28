@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOGIN</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="acessibilidade.js"></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="header">
+    <label for="theme" class="checkbox-label">
+      Contraste:
+      <input name="theme" type="checkbox" onClick="darkMode()">
+    </label>
+    <span class="font-con">
+      <button Onclick="mudaFonte('menos'); return false;">A-</button>
+      <button Onclick="mudaFonte('padrao'); return false;">A</button>
+      <button Onclick="mudaFonte('mais'); return false;">A+</button>
+
+    </span>
+    <a href="#" onClick="imprimirPagina()"><span class="material-symbols-outlined print">print</a>
+  </div>
+  <h1>Login</h1>
+  <form>
+    <div class="informacoes">
+      <label> Usuário:<br>
+        <input type="text" required>
+      </label><br>
+      <label> Senha: <br>
+        <input type="password" required>
+      </label><br>
+      <div class="enviar">
+        <input type="submit" value="Verificar">
+        <input type="reset" value="Limpar">
+      </div>
+    </div>
+  </form>
+
+  <div class="voltar">
+    <a href="Curriculo.html"><input type="button" value="Entrar"></a>
+  </div>
+
+</body>
+
+</html>
